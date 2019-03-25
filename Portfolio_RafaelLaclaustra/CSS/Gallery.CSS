@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-weight: normal;
+}
+.background{
+  width: 100%;
+  height: 100%;
+  background-image: url(../back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow-y: auto;
+  opacity: 0.9;
+}
+
+.topmenu{
+  text-decoration: none;
+  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 8%;
+  margin: 0px 0px;
+  float: right;
+  background-color: black;
+  color: white;
+  display: flex;
+  position: relative;
+  text-align: right;
+  width: 70%;
+  padding-right: 10%;
+  justify-content: space-around;
+}
+
+#menu{
+    width: 100%;
+}
+
+.menuPrincipal{
+  width: 350px;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  left: 0;
+}
+.menuPrincipal a{
+  text-decoration: none;
+  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: bold;
+  width: 100%;
+  height: 90%;
+  margin: 20px 0px;
+  float: left;
+  background-color: black;
+  color: white;
+  line-height: 90px;
+  display: inline-block;
+  text-align: center;
+  transition: 300ms;
+}
+a.active, .menuPrincipal a:hover{
+  background-color: white;
+  color: black;
+  width: 100%;
+}
+.a{
+  width: 95%;
+}
+.b{
+  width: 90%;
+}
+.c{
+  width: 85%;
+}
+.d{
+  width: 80%;
+}
+.content{
+  position: absolute;
+  width: 1500px;
+  margin-top: 26px;
+  min-height: 500px;
+  height: auto;
+  right: 0;
+  top: 3%;
+}
+.gallery{
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  padding: 0 60px;
+}
+
+.image{
+  width: 29%;
+  margin: 2%;
+  float: left;
+    display: none;    
+}
+.image img{
+  width: 100%;
+  transition: all ease 0.5s;
+  transform: scale(1);
+}
+.image img:hover{
+  transition: all ease 0.5s;
+  transform: scale(1.2);
+}
+
+.show {
+  display: block;
+}
+
+#myBtnContainer{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+.btn{
+color: white;
+}
+.btn:hover{
+background-color: darkgrey;
+}
